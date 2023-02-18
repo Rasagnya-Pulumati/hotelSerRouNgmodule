@@ -1,0 +1,74 @@
+<table style="width: 30%; height: 100%;float: left;">
+    <tr>
+        <td style="background-color: rgb(244, 221, 226);border: solid 1.5px;">
+        
+            <table>
+                <tr>
+                    <td> Enter  Hotel Id </td>
+                    <td> <input type="text" value="101" #hotelId/> </td>
+                </tr>
+                <tr>
+                    <td> Enter  Hotel Name </td>
+                    <td> <input type="text" value="Emerald"#hotelName/> </td>
+                </tr>
+                <tr>
+                    <td> Duration </td>
+                    <td> <input type="text" value="2" #duration/> </td>
+                </tr>
+                <tr>
+                    <td>Location</td>
+                    <td> 
+                        <select #location>
+                            <option> Banglore </option>
+                            <option> New Delhi </option>
+                            <option> Hyderabad </option>
+                            <option> Chennai </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td> Hotel Manager Name </td>
+                    <td> <input type="text" value="shalini" #manager/> </td>
+                </tr>
+                <tr>
+                    <td> Price </td>
+                    <td> <input type="text" value= "2000" #price/> </td>
+                </tr>
+                <tr>
+                    <td> Discount </td>
+                    <td> <input type="text" value="5" #discount/> </td>
+                </tr>
+                <tr>
+                    <td> Hotel Description </td>
+                    <td> <input type="text" value="excellentFood" #about/> </td>
+                </tr>
+            
+                <tr>
+                    <td> Image Name </td>
+                    <td> <input type="text" value="emeraldpark.jpg" #image/> </td>
+                </tr>
+                <tr>
+                    <td> <input type="reset" style="border: solid 1.5px;border-radius: 5px;" vaule="Clear All"></td>
+                    <td> <input type="button" style="border: solid 1.5px;border-radius: 5px;" 
+                        (click)="readHotel(hotelId.value,hotelName.value,duration.value,location.value,manager.value,price.value,discount.value,about.value,image.value)"
+                        value="Add Hotel" /> </td>
+                </tr>
+            </table>
+            <br/>
+        </td>
+        
+    </tr>
+
+</table>
+<table style="margin-left: 15% ;width: 40%; height: 100%;float: left;background-color: rgb(164, 243, 217);">
+
+            
+    <app-tdfhotel-page ></app-tdfhotel-page>
+
+
+</table>
+
+
+
+ 
+
